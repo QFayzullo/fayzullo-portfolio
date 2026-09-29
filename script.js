@@ -135,3 +135,33 @@ projects.forEach(p => {
   card.append(info);
   grid.append(card);
 });
+
+
+/* ===== BOG'LANISH FORMASI (Netlify Forms) ===== */
+const form = document.getElementById("contactForm");
+const statusEl = document.getElementById("formStatus");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const btn = form.querySelector("button[type=submit]");
+  btn.disabled = true;
+  statusEl.className = "form-status";
+  statusEl.textContent = "Yuborilmoqda...";
+
+  try {
+    const res = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form)).toString(),
+    });
+    if (!res.ok) throw new Error(res.status);
+    form.reset();
+    statusEl.className = "form-status ok";
+    statusEl.textContent = "Rahmat! Xabaringiz yuborildi.";
+  } catch (err) {
+    statusEl.className = "form-status err";
+    statusEl.textContent = "Xatolik yuz berdi. Iltimos, Telegram orqali yozing.";
+  } finally {
+    btn.disabled = false;
+  }
+});
