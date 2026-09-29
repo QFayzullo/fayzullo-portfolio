@@ -493,3 +493,65 @@ button:focus-visible {
         margin-top: 20px;
     }
 }
+
+
+/* CONTACT FORM */
+
+.contact-form {
+    max-width: 520px;
+    margin: 50px auto 0;
+    text-align: left;
+    display: grid;
+    gap: 8px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #a7a7b3;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    background: #121218;
+    border: 1px solid #292933;
+    border-radius: 8px;
+    color: #ffffff;
+    font: inherit;
+    margin-bottom: 10px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #7c5cff;
+}
+
+.contact-form .btn {
+    justify-self: start;
+    border: 0;
+    color: #ffffff;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form .btn:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.form-status {
+    min-height: 24px;
+    margin: 0;
+    font-size: 15px;
+}
+
+.form-status.ok { color: #6ee7a8; }
+.form-status.err { color: #ff8a8a; }
+
+.hidden-field {
+    position: absolute;
+    left: -9999px;
+}
