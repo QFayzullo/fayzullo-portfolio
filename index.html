@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Fayzullo — Android Developer</title>
-
+    <meta name="description" content="Fayzullo — Kotlin va Jetpack Compose bilan ishlaydigan Android dasturchi. Loyihalar, ko‘nikmalar va aloqa.">
+    <meta name="theme-color" content="#0b0b0f">
+    <meta property="og:title" content="Fayzullo — Android Developer">
+    <meta property="og:description" content="Kotlin va Jetpack Compose bilan zamonaviy Android ilovalar.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,77 +17,41 @@
 
 <header class="header">
     <div class="container nav">
+        <a href="#" class="logo">Fayzullo<span>.</span></a>
 
-        <a href="#" class="logo">
-            Fayzullo<span>.</span>
-        </a>
-
-        <nav class="menu">
+        <nav class="menu" id="menu" aria-label="Asosiy menyu">
             <a href="#about">Men haqimda</a>
             <a href="#skills">Ko‘nikmalar</a>
             <a href="#projects">Loyihalar</a>
             <a href="#contact">Bog‘lanish</a>
         </nav>
 
-        <button class="menu-btn" id="menuBtn">
-            ☰
-        </button>
-
+        <button class="menu-btn" id="menuBtn" aria-label="Menyuni ochish" aria-expanded="false" aria-controls="menu">☰</button>
     </div>
 </header>
-
 
 <main>
 
     <!-- HERO -->
-
     <section class="hero">
-
         <div class="container hero-content">
-
             <div class="hero-text">
-
-                <p class="small-title">
-                    SALOM, MEN FAYZULLO
-                </p>
-
-                <h1>
-                    Android
-                    <span>Developer</span>
-                </h1>
-
+                <p class="small-title">SALOM, MEN FAYZULLO</p>
+                <h1>Android <span>Developer</span></h1>
                 <p class="hero-description">
                     Zamonaviy, qulay va ishonchli Android ilovalar
                     yaratishga qiziqadigan dasturchiman.
                 </p>
-
                 <div class="hero-buttons">
-
-                    <a href="#projects" class="btn primary">
-                        Loyihalarim
-                    </a>
-
-                    <a href="#contact" class="btn secondary">
-                        Bog‘lanish
-                    </a>
-
+                    <a href="#projects" class="btn primary">Loyihalarim</a>
+                    <a href="#contact" class="btn secondary">Bog‘lanish</a>
                 </div>
-
             </div>
 
-
             <div class="hero-card">
-
                 <div class="code-card">
-
-                    <div class="dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <pre><code>
-class AndroidDeveloper {
+                    <div class="dots"><span></span><span></span><span></span></div>
+<pre><code>class AndroidDeveloper {
 
     val name = "Fayzullo"
     val language = "Kotlin"
@@ -91,485 +59,169 @@ class AndroidDeveloper {
     fun createApps() {
         // Build something great 🚀
     }
-}
-                    </code></pre>
-
+}</code></pre>
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
 
     <!-- ABOUT -->
-
     <section id="about" class="section">
-
         <div class="container">
+            <p class="section-label">01 — MEN HAQIMDA</p>
+            <h2>O‘zim haqimda</h2>
 
-            <p class="section-label">
-                01 — MEN HAQIMDA
-            </p>
-
-            <h2>
-                O‘zim haqimda
-            </h2>
-
-           <div class="about-content">
-
-    <p>
-        Men Kotlin va Java asosida Android ilovalar ishlab chiqa oladigan Android dasturchiman. Zamonaviy va qulay
-        mobil ilovalar yaratish, yangi texnologiyalarni o‘rganish
-        hamda ularni real loyihalarda qo'llay olaman
-    </p>
-
-    <p>
-        Loyihalarim davomida Jetpack Compose,MVP,MVVM,MVI Clean
-        Architecture, Room, Retrofit, Hilt, Coroutines va boshqa
-        Android texnologiyalari bilan ishlaganman va ishlab kelmoqdaman
-    </p>
-
-    <p>
-        Maqsadim — Android development bo‘yicha professional
-        darajaga yetishish va foydalanuvchilar uchun foydali,
-        sifatli hamda ishonchli mobil ilovalar yaratish.
-    </p>
-
-</div>
-
+            <div class="about-content">
+                <p>
+                    Men Kotlin va Java asosida Android ilovalar ishlab chiqa oladigan
+                    Android dasturchiman. Zamonaviy va qulay mobil ilovalar yaratish,
+                    yangi texnologiyalarni o‘rganish hamda ularni real loyihalarda
+                    qo‘llash — mening asosiy yo‘nalishim.
+                </p>
+                <p>
+                    Loyihalarim davomida Jetpack Compose, MVP, MVVM, MVI, Clean
+                    Architecture, Room, Retrofit, Hilt, Coroutines va boshqa Android
+                    texnologiyalari bilan ishlaganman va ishlab kelmoqdaman.
+                </p>
+                <p>
+                    Maqsadim — Android development bo‘yicha professional darajaga
+                    yetishish va foydalanuvchilar uchun foydali, sifatli hamda
+                    ishonchli mobil ilovalar yaratish.
+                </p>
+            </div>
         </div>
-
     </section>
 
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <div class="container">
+            <p class="section-label">02 — KO‘NIKMALAR</p>
+            <h2>Texnologiyalar</h2>
 
-   ```html
-<!-- SKILLS -->
+            <div class="skills-grid">
 
-<section id="skills" class="section">
+                <div class="skill-card">
+                    <h3>Kotlin</h3>
+                    <div class="tags">
+                        <span>Kotlin</span><span>OOP</span><span>Collections</span>
+                        <span>Generics</span><span>Extension Functions</span><span>Lambda</span>
+                        <span>Scope Functions</span><span>Sealed Class</span><span>Data Class</span>
+                    </div>
+                </div>
 
-    <div class="container">
+                <div class="skill-card">
+                    <h3>Android Development</h3>
+                    <div class="tags">
+                        <span>Android SDK</span><span>Jetpack Compose</span><span>XML</span>
+                        <span>ViewBinding</span><span>Activity</span><span>Fragment</span>
+                        <span>Navigation</span><span>ViewModel</span>
+                    </div>
+                </div>
 
-        <p class="section-label">
-            02 — KO‘NIKMALAR
-        </p>
+                <div class="skill-card">
+                    <h3>Arxitektura</h3>
+                    <div class="tags">
+                        <span>MVVM</span><span>MVP</span><span>Clean Architecture</span>
+                        <span>SOLID</span><span>Repository Pattern</span><span>Multi-module</span>
+                    </div>
+                </div>
 
-        <h2>
-            Texnologiyalar
-        </h2>
+                <div class="skill-card">
+                    <h3>Asinxron dasturlash</h3>
+                    <div class="tags">
+                        <span>Coroutines</span><span>Suspend</span><span>Flow</span>
+                        <span>StateFlow</span><span>LiveData</span>
+                    </div>
+                </div>
 
-        <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Ma'lumotlar bazasi</h3>
+                    <div class="tags">
+                        <span>Room</span><span>SQLite</span><span>DataStore</span>
+                        <span>SharedPreferences</span>
+                    </div>
+                </div>
 
-            <!-- Kotlin -->
+                <div class="skill-card">
+                    <h3>Networking</h3>
+                    <div class="tags">
+                        <span>Retrofit</span><span>OkHttp</span><span>REST API</span><span>JSON</span>
+                    </div>
+                </div>
 
-            <div class="skill-card">
+                <div class="skill-card">
+                    <h3>Dependency Injection</h3>
+                    <div class="tags"><span>Hilt</span><span>KSP</span></div>
+                </div>
 
-                <h3>Kotlin</h3>
+                <div class="skill-card">
+                    <h3>Android imkoniyatlari</h3>
+                    <div class="tags">
+                        <span>WorkManager</span><span>Service</span><span>Foreground Service</span>
+                        <span>Notifications</span><span>Permissions</span><span>Activity Result API</span>
+                    </div>
+                </div>
 
-                <div class="tags">
+                <div class="skill-card">
+                    <h3>Testing</h3>
+                    <div class="tags">
+                        <span>Unit Testing</span><span>UI Testing</span><span>Integration Testing</span>
+                    </div>
+                </div>
 
-                    <span>Kotlin</span>
-                    <span>OOP</span>
-                    <span>Collections</span>
-                    <span>Generics</span>
-                    <span>Extension Functions</span>
-                    <span>Lambda</span>
-                    <span>Scope Functions</span>
-                    <span>Sealed Class</span>
-                    <span>Data Class</span>
-
+                <div class="skill-card">
+                    <h3>Vositalar</h3>
+                    <div class="tags">
+                        <span>Git</span><span>GitHub</span><span>Android Studio</span>
+                        <span>Postman</span><span>Gradle</span><span>CI/CD</span>
+                    </div>
                 </div>
 
             </div>
-
-
-            <!-- Android -->
-
-            <div class="skill-card">
-
-                <h3>Android Development</h3>
-
-                <div class="tags">
-
-                    <span>Android SDK</span>
-                    <span>Jetpack Compose</span>
-                    <span>XML</span>
-                    <span>ViewBinding</span>
-                    <span>Activity</span>
-                    <span>Fragment</span>
-                    <span>Navigation</span>
-                    <span>ViewModel</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- Architecture -->
-
-            <div class="skill-card">
-
-                <h3>Arxitektura</h3>
-
-                <div class="tags">
-
-                    <span>MVVM</span>
-                    <span>MVP</span>
-                    <span>Clean Architecture</span>
-                    <span>SOLID</span>
-                    <span>Repository Pattern</span>
-                    <span>Multi-module</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- Coroutines -->
-
-            <div class="skill-card">
-
-                <h3>Asinxron dasturlash</h3>
-
-                <div class="tags">
-
-                    <span>Coroutines</span>
-                    <span>Suspend</span>
-                    <span>Flow</span>
-                    <span>StateFlow</span>
-                    <span>LiveData</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- Database -->
-
-            <div class="skill-card">
-
-                <h3>Ma'lumotlar bazasi</h3>
-
-                <div class="tags">
-
-                    <span>Room</span>
-                    <span>SQLite</span>
-                    <span>DataStore</span>
-                    <span>SharedPreferences</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- Networking -->
-
-            <div class="skill-card">
-
-                <h3>Networking</h3>
-
-                <div class="tags">
-
-                    <span>Retrofit</span>
-                    <span>OkHttp</span>
-                    <span>REST API</span>
-                    <span>JSON</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- Dependency Injection -->
-
-            <div class="skill-card">
-
-                <h3>Dependency Injection</h3>
-
-                <div class="tags">
-
-                    <span>Hilt</span>
-                    <span>KSP</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- Android Features -->
-
-            <div class="skill-card">
-
-                <h3>Android imkoniyatlari</h3>
-
-                <div class="tags">
-
-                    <span>WorkManager</span>
-                    <span>Service</span>
-                    <span>Foreground Service</span>
-                    <span>Notifications</span>
-                    <span>Permissions</span>
-                    <span>Activity Result API</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- Testing -->
-
-            <div class="skill-card">
-
-                <h3>Testing</h3>
-
-                <div class="tags">
-
-                    <span>Unit Testing</span>
-                    <span>UI Testing</span>
-                    <span>Integration Testing</span>
-
-                </div>
-
-            </div>
-
-
-            <!-- Tools -->
-
-            <div class="skill-card">
-
-                <h3>Vositalar</h3>
-
-                <div class="tags">
-
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>Android Studio</span>
-                    <span>Postman</span>
-                    <span>Gradle</span>
-                    <span>CI/CD</span>
-
-                </div>
-
-            </div>
-
         </div>
-
-    </div>
-
-</section>
-```
-
-
+    </section>
 
     <!-- PROJECTS -->
-
     <section id="projects" class="section">
-
         <div class="container">
+            <p class="section-label">03 — LOYIHALAR</p>
+            <h2>Mening loyihalarim</h2>
 
-            <p class="section-label">
-                03 — LOYIHALAR
-            </p>
-
-            <h2>
-                Mening loyihalarim
-            </h2>
-
-            <div class="projects-grid">
-
-
-                <article class="project-card">
-
-                    <div class="project-image">
-                        <span>AGROBANK</span>
-                    </div>
-
-                    <div class="project-info">
-
-                        <h3>Agrobank</h3>
-
-                        <p>
-                            Real server bilan ishlaydigan,
-                            multi-module arxitekturaga ega Android ilova.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Kotlin</span>
-                            <span>Compose</span>
-                            <span>Hilt</span>
-                            <span>Retrofit</span>
-                        </div>
-
-                        <a href="#" class="project-link">
-                            GitHub →
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project-card">
-
-                    <div class="project-image">
-                        <span>OSH XONA</span>
-                    </div>
-
-                    <div class="project-info">
-
-                        <h3>Oshxona</h3>
-
-                        <p>
-                            Retseptlarni ko‘rish va kategoriyalar
-                            bo‘yicha saralash imkonini beruvchi ilova.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Kotlin</span>
-                            <span>Compose</span>
-                            <span>API</span>
-                        </div>
-
-                        <a href="#" class="project-link">
-                            GitHub →
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project-card">
-
-                    <div class="project-image">
-                        <span>WATER</span>
-                    </div>
-
-                    <div class="project-info">
-
-                        <h3>Water Reminder</h3>
-
-                        <p>
-                            Kun davomida ichilgan suv miqdorini
-                            kuzatish va hisoblash uchun ilova.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Kotlin</span>
-                            <span>Compose</span>
-                            <span>Room</span>
-                            <span>Hilt</span>
-                        </div>
-
-                        <a href="#" class="project-link">
-                            GitHub →
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project-card">
-
-                    <div class="project-image">
-                        <span>EDUCATION</span>
-                    </div>
-
-                    <div class="project-info">
-
-                        <h3>Education App</h3>
-
-                        <p>
-                            Kurslar, guruhlar va talabalarni
-                            boshqarish uchun Android ilova.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Kotlin</span>
-                            <span>Room</span>
-                            <span>Navigation</span>
-                            <span>ViewBinding</span>
-                        </div>
-
-                        <a href="#" class="project-link">
-                            GitHub →
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
+            <div class="projects-grid" id="projectsGrid"></div>
         </div>
-
     </section>
 
-
     <!-- CONTACT -->
-
     <section id="contact" class="section contact">
-
         <div class="container">
-
-            <p class="section-label">
-                04 — BOG‘LANISH
-            </p>
-
-            <h2>
-                Birgalikda loyiha qilamizmi?
-            </h2>
+            <p class="section-label">04 — BOG‘LANISH</p>
+            <h2>Birgalikda loyiha qilamizmi?</h2>
 
             <p>
-                Agar Android loyihangiz bo‘lsa yoki men bilan
-                bog‘lanmoqchi bo‘lsangiz, quyidagi platformalar
-                orqali murojaat qilishingiz mumkin.
+                Agar Android loyihangiz bo‘lsa yoki men bilan bog‘lanmoqchi
+                bo‘lsangiz, quyidagi platformalar orqali murojaat qilishingiz mumkin.
             </p>
 
+            <!-- TODO: haqiqiy havolalarni qo'ying -->
             <div class="contact-links">
-
-                <a href="#">
-                    GitHub
-                </a>
-
-                <a href="#">
-                    LinkedIn
-                </a>
-
-                <a href="#">
-                    Telegram
-                </a>
-
-                <a href="mailto:your@email.com">
-                    Email
-                </a>
-
+                <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Telegram</a>
+                <a href="mailto:your@email.com">Email</a>
             </div>
-
         </div>
-
     </section>
 
 </main>
 
-
 <footer>
-
     <div class="container">
-
-        <p>
-            © 2026 Fayzullo. Barcha huquqlar himoyalangan.
-        </p>
-
+        <p>© 2026 Fayzullo. Barcha huquqlar himoyalangan.</p>
     </div>
-
 </footer>
 
+<dialog id="shotDialog"><img alt=""></dialog>
 
 <script src="script.js"></script>
-
 </body>
 </html>
