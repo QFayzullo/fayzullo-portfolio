@@ -32,16 +32,13 @@ a {
     position: sticky;
     top: 0;
     z-index: 100;
-
     background: rgba(11, 11, 15, 0.9);
     backdrop-filter: blur(10px);
-
     border-bottom: 1px solid #222228;
 }
 
 .nav {
     height: 75px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,13 +69,10 @@ a {
 
 .menu-btn {
     display: none;
-
     background: none;
     border: none;
-
     color: white;
     font-size: 25px;
-
     cursor: pointer;
 }
 
@@ -87,7 +81,6 @@ a {
 
 .hero {
     min-height: 90vh;
-
     display: flex;
     align-items: center;
 }
@@ -96,7 +89,6 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 70px;
-
     align-items: center;
 }
 
@@ -111,7 +103,6 @@ a {
 .hero h1 {
     font-size: clamp(55px, 8vw, 95px);
     line-height: 1;
-
     margin: 20px 0;
 }
 
@@ -122,24 +113,19 @@ a {
 .hero-description {
     color: #a7a7b3;
     max-width: 550px;
-
     font-size: 18px;
 }
 
 .hero-buttons {
     display: flex;
     gap: 15px;
-
     margin-top: 35px;
 }
 
 .btn {
     padding: 13px 25px;
-
     border-radius: 8px;
-
     font-weight: bold;
-
     transition: 0.3s;
 }
 
@@ -164,29 +150,22 @@ a {
 
 .code-card {
     background: #121218;
-
     border: 1px solid #292933;
-
     border-radius: 15px;
-
     padding: 25px;
-
     box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
 }
 
 .dots {
     display: flex;
     gap: 7px;
-
     margin-bottom: 20px;
 }
 
 .dots span {
     width: 11px;
     height: 11px;
-
     border-radius: 50%;
-
     background: #444;
 }
 
@@ -207,15 +186,12 @@ a {
 
 .section h2 {
     font-size: 45px;
-
     margin: 15px 0 50px;
 }
 
 .about-content {
     max-width: 800px;
-
     color: #a7a7b3;
-
     font-size: 18px;
 }
 
@@ -228,19 +204,14 @@ a {
 
 .skills-grid {
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 20px;
 }
 
 .skill-card {
     padding: 25px;
-
     background: #121218;
-
     border: 1px solid #292933;
-
     border-radius: 12px;
 }
 
@@ -251,24 +222,17 @@ a {
 .tags,
 .project-tags {
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 8px;
 }
 
 .tags span,
 .project-tags span {
     padding: 6px 11px;
-
     background: #1b1b24;
-
     border: 1px solid #30303b;
-
     border-radius: 6px;
-
     font-size: 13px;
-
     color: #bcbcca;
 }
 
@@ -277,42 +241,30 @@ a {
 
 .projects-grid {
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 25px;
 }
 
 .project-card {
     background: #121218;
-
     border: 1px solid #292933;
-
     border-radius: 15px;
-
     overflow: hidden;
-
     transition: 0.3s;
 }
 
 .project-card:hover {
     transform: translateY(-7px);
-
     border-color: #7c5cff;
 }
 
 .project-image {
     height: 190px;
-
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     background: #181820;
-
     color: #7c5cff;
-
     font-size: 25px;
     font-weight: bold;
 }
@@ -323,24 +275,114 @@ a {
 
 .project-info h3 {
     font-size: 23px;
-
-    margin-bottom: 10px;
 }
 
-.project-info p {
+.project-info > p {
     color: #92929f;
-
     margin-bottom: 20px;
 }
 
 .project-link {
     display: inline-block;
-
     margin-top: 20px;
-
     color: #8d72ff;
-
     font-weight: bold;
+}
+
+.project-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    background: #1b1b24;
+    border: 1px solid #7c5cff;
+    color: #b3a2ff;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.features {
+    list-style: none;
+    margin: 0 0 20px;
+    display: grid;
+    gap: 6px;
+}
+
+.features li {
+    position: relative;
+    padding-left: 18px;
+    color: #b3b3c0;
+    font-size: 15px;
+}
+
+.features li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #7c5cff;
+}
+
+.shots {
+    display: none;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 15px;
+    background: #181820;
+}
+
+.has-shots .shots {
+    display: flex;
+}
+
+.has-shots .project-image {
+    display: none;
+}
+
+.shots button {
+    flex: none;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: zoom-in;
+    border-radius: 10px;
+}
+
+.shots img {
+    display: block;
+    height: 260px;
+    width: auto;
+    border-radius: 10px;
+    border: 1px solid #292933;
+}
+
+#shotDialog {
+    margin: auto;
+    padding: 0;
+    border: 0;
+    background: none;
+    max-width: 95vw;
+}
+
+#shotDialog::backdrop {
+    background: rgba(0, 0, 0, 0.85);
+}
+
+#shotDialog img {
+    display: block;
+    max-width: 95vw;
+    max-height: 90vh;
+    border-radius: 12px;
+    cursor: zoom-out;
 }
 
 
@@ -352,37 +394,27 @@ a {
 
 .contact p {
     max-width: 650px;
-
     margin: auto;
-
     color: #9999a6;
 }
 
 .contact-links {
     display: flex;
-
     justify-content: center;
-
     flex-wrap: wrap;
-
     gap: 15px;
-
     margin-top: 35px;
 }
 
 .contact-links a {
     padding: 12px 20px;
-
     border: 1px solid #30303a;
-
     border-radius: 8px;
-
     transition: 0.3s;
 }
 
 .contact-links a:hover {
     border-color: #7c5cff;
-
     color: #7c5cff;
 }
 
@@ -391,14 +423,19 @@ a {
 
 footer {
     padding: 30px 0;
-
     border-top: 1px solid #222228;
-
     color: #777783;
-
     text-align: center;
-
     font-size: 14px;
+}
+
+
+/* FOCUS (klaviatura bilan yurish uchun) */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid #7c5cff;
+    outline-offset: 3px;
 }
 
 
@@ -408,20 +445,13 @@ footer {
 
     .menu {
         display: none;
-
         position: absolute;
-
         top: 75px;
         left: 0;
-
         width: 100%;
-
         padding: 25px;
-
         background: #0f0f14;
-
         flex-direction: column;
-
         text-align: center;
     }
 
@@ -435,7 +465,6 @@ footer {
 
     .hero {
         min-height: auto;
-
         padding: 100px 0;
     }
 
