@@ -199,16 +199,32 @@
 
             <p>
                 Agar Android loyihangiz bo‘lsa yoki men bilan bog‘lanmoqchi
-                bo‘lsangiz, quyidagi platformalar orqali murojaat qilishingiz mumkin.
+                bo‘lsangiz, Telegram yoki email orqali yozing, yoki quyidagi formani to‘ldiring.
             </p>
 
-            <!-- TODO: haqiqiy havolalarni qo'ying -->
             <div class="contact-links">
-                <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="#" target="_blank" rel="noopener noreferrer">Telegram</a>
-                <a href="mailto:your@email.com">Email</a>
+                <a href="https://t.me/F_Programmer" target="_blank" rel="noopener noreferrer">Telegram</a>
+                <a href="mailto:fayzulloqurbonov013@gmail.com">Email</a>
+                <a href="https://github.com/QFayzullo" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
+
+            <form class="contact-form" id="contactForm" name="contact" method="POST"
+                  data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="contact">
+                <p class="hidden-field"><label>Bu maydonni to‘ldirmang: <input name="bot-field"></label></p>
+
+                <label for="cName">Ismingiz</label>
+                <input id="cName" name="name" type="text" required autocomplete="name">
+
+                <label for="cContact">Telegram yoki email</label>
+                <input id="cContact" name="contact" type="text" required>
+
+                <label for="cMessage">Xabar</label>
+                <textarea id="cMessage" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn primary">Yuborish</button>
+                <p class="form-status" id="formStatus" role="status"></p>
+            </form>
         </div>
     </section>
 
